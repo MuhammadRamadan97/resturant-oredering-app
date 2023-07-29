@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&family=Work+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Resturant Ordering App</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <h1>Jimmy's Diner</h1>
+        <h3 class="subtitle">The best burgers and pizzas in town.</h3>
+      </div>
+    </div>
+    <div class="menu" id="menu"></div>
+    <div class="checkout hidden" id="checkout">
+      <h2 class="your-order">Your order</h2>
+      <div id="ordered-items"></div>
+      <div class="total-price">
+        <h2>Total price:</h2>
+        <h2 id="total-price">$</h2>
+      </div>
+      <button class="order-btn" id="complete-order-btn">Complete order</button>
+    </div>
+    <div class="payment-page hidden" id="payment-page">
+      <h2 class="card-details">Enter card details</h2>
+      <input
+        class="input"
+        id="input-name"
+        type="text"
+        placeholder="Enter your name"
+      />
+      <input
+        class="input"
+        id="input-card-number"
+        type="number"
+        placeholder="Enter card number"
+      />
+      <input
+        class="input"
+        type="number"
+        placeholder="Enter CVV"
+        maxlength="3"
+        id="input-cvv"
+      />
+      <button class="pay-btn" id="pay-btn">Pay</button>
+    </div>
+    <div id="thanks-message"></div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+html,
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+}
+
+.header {
+  margin: 0;
+  height: 24vh;
+  background-image: url(/background.jpeg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+  align-items: start;
+}
+
+.title {
+  font-family: "Smythe", cursive;
+  color: white;
+  margin: 0;
+  margin-left: 2em;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}
+.subtitle {
+  margin-top: -1.5em;
+  opacity: 0.75;
+  font-size: 1.3rem;
+}
+.menu-item {
+  display: flex;
+
+  align-items: center;
+  margin: 0 auto;
+
+  min-width: 250px;
+  max-width: 600px;
+  justify-content: space-evenly;
+  padding-right: 1em;
+
+  border-bottom: 1px gray solid;
+}
+.flex-row {
+  display: flex;
+}
+.emoji {
+  font-size: 3rem;
+  height: 100%;
+  font-family: "Inter";
+  margin-right: 0.6em;
+}
+
+.item-details {
+  line-height: 45%;
+}
+
+.add-btn {
+  margin-left: auto;
+}
+#add-btn {
+  background-color: transparent;
+  width: auto;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  opacity: 0.5;
+  padding: 0.5em 0.6em;
+  border: rgb(165, 165, 165) 1px solid;
+}
+
+button {
+  cursor: pointer;
+}
+.checkout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 250px;
+  max-width: 600px;
+  font-family: Smythe;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1.5px solid black;
+  margin-top: 1em;
+}
+
+.your-order {
+  text-align: center;
+}
+
+.order-btn,
+.pay-btn {
+  color: white;
+  font-size: 1.2rem;
+  background: #16db99;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  padding: 0.8em 0;
+  border: none;
+  margin-bottom: 0.5em;
+}
+
+.ordered-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-name {
+  margin-right: 0.5em;
+}
+.remove {
+  align-self: end;
+  margin-right: auto;
+  font-family: Verdana;
+
+  opacity: 40%;
+  font-weight: 200px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.payment-page {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 13%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-radius: 0.24rem;
+  background-color: rgb(243, 247, 243);
+  padding: 1em;
+}
+
+.card-details {
+  text-align: center;
+  color: #000;
+  font-family: Verdana;
+  font-size: 1.5rem;
+
+  font-weight: 700;
+}
+
+.input {
+  border-radius: 0.24313rem;
+  border: 1.297px solid #757575;
+  color: #757575;
+  font-family: Verdana;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0.8em;
+  margin: 0.5em;
+  filter: drop-shadow(5.2px 5.2px 255.5px rgba(0, 0, 0, 0.5));
+}
+
+.thanks-message {
+  background: rgb(210, 240, 226);
+  color: #065f46;
+  font-family: Smythe;
+  font-size: 2rem;
+  padding: 1em;
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+
+.hidden {
+  display: none;
+}
